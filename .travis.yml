@@ -1,7 +1,7 @@
 language: python
 python:
     - 3.6
- install:
+install:
     - pip install boto3
     - pip install utils
 script: python dataProcessor.py
