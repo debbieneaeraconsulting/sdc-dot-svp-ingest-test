@@ -11,7 +11,7 @@ from moto import mock_s3
 # logger.level = logging.DEBUG
 # stream_handler = logging.StreamHandler(sys.stdout)
 # logger.addHandler(stream_handler)
-
+# Test
 
 class TestLambdaHandler(unittest.TestCase):
     def setUp(self):
