@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/debbieneaeraconsulting/sdc-dot-svp-ingest-test.svg?branch=master)](https://travis-ci.org/debbieneaeraconsulting/sdc-dot-svp-ingest-test)
 # sdc-dot-cvp-ingest
 US Department of Transportation (USDOT) Intelligent Transportation Systems Secure Data Commons (ITS SDC). Connected Vehicle Pilots (CVP) tools to support data ingest into the Data Lake.
 
