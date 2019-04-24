@@ -4,4 +4,12 @@ python:
 install:
     - pip install boto3
     - pip install utils
-script: python dataProcessor.py
+    - pip install moto
+addons:
+    sonarcloud:
+        organization: "debbieneaeraconsulting-github"
+        token:
+            secure: "hDLM6NBItrEmD1jVe6BaShgmynHOw5SApgDiBZikZoPUzojujElmTSAbKYsh8V/oRgDpO4Y2mJpIgkjwKjlqHmhJNeshzpb9o7Ng6w+iQwWaEsMsBnXl0WnTN/gI8dpJYPnriR0DnKyPhVIvwPS7zPsQvLaf6kji5BdeKSKyS36H0fIBLvYrwq8FoluYPSXuJEuWZ9PQpDID6o+AhU04QG9ByNiUrTFv86lJdBC+NOy1xjSAmA0tIaorEOBIPecapYlNYxWxPTQHXex9xqZylIfzwSgwTjt4vKrC52wr29EyLNUkquS5gCd9Ies392OS5DsoH2/XHLZL+REulfp6FB6HXCXRqgraO6pQxOyDwk1OJVUERpZeojSQOL+NYlmp5yo4UyVY0q5EUiarkFGYKxyoHkHmVYGcvXX5Ma6SiJ47o7KExaeWuq78gEec/Gq0FYMH9yX+E8wwxqLzKlbKiXce0A5SkQn1x2Gds7U9YPBZUz8o3WYc+2uKloVbAmSDJ1juHJp097gsatJF293HkQIbvhzz0g0Jce94IMnxDoADEgBY9FsKGCdVz//NDrT0jdNlh3fMjNd4cilktlATC2URvnXiJXetpDX5bv8xiG/XcDGZU5d+vGOnV91axvFNDJuFVLBUSu+JQHjBRxIIYiq2JTrOTAomBDuwmazvwIY="
+script: 
+     - python dataProcessor.py
+     - sonar-scanner 
